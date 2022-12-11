@@ -7,6 +7,13 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | NFT preview card component</title>
 
@@ -25,14 +32,21 @@
 
 <body>
 
-  Equilibrium #3429
 
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-
-  Creation of Dr-Phi
+  <main>
+    <article class="nft">
+      <div class="nft__img">
+        <img src="./images/image-equilibrium.jpg" alt="cube of glass in perfect equilibrium">
+      </div>
+      <header>Equilibrium #3429</header>
+      <p>Our Equilibrium collection promotes balance and calm.</p>
+      <div class="nft__offer">
+        <button><img src="./images/icon-ethereum.svg"> 0.041 ETH</button>
+        <p class="timer">3 days left</span>
+      </div>
+      <footer><img src="./images/image-avatar.png" alt="Avatar">Creation of Dr-Phi</footer>
+    </article>
+  </main>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
